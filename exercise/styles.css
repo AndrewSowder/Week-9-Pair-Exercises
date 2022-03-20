@@ -75,7 +75,6 @@ main, div, footer {
 }
 
 
-
 .home{
     display: grid;
     grid-template-areas:
@@ -134,6 +133,49 @@ h2{
 
 }
 
+/* Starting Contact US CSS */
+
+#contactgrid{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-areas: "header nav"
+                         "main main"
+                         "footer footer";
+    row-gap: 10px;
+    column-gap: 10px;
+    border: black 1px;
+    padding: 10px;
+    }
+
+#main {
+display: block;
+border: black;
+grid-area: main;
+
+}
+
+#main label{
+    display: block;
+}
+#main div{
+    padding: 20px;
+}
+
+form{
+    grid-area: form;
+
+}
+
+footer{
+    grid-area: footer;
+
+}
+
+#main h2{
+    vertical-align: top;
+}
+
+
 
 /* Home page media */
 
@@ -148,7 +190,6 @@ h2{
         "store"
         "copy";
     }
-
 
     
 }
